@@ -1,0 +1,1385 @@
+fileFormatVersion: 2
+guid: 353213e2e5cd64d4b981913704c13963
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8687363116155369659
+    second: Grass and Paths_ 109 x 125px_ comp_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BaseGrass
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8754df9b6bf8870800000000000000
+      internalID: 8687363116155369659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_1
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 750
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0661bf9278a4b254380c4644704e3ce6
+      internalID: 171541983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_2
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 750
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7e9b557a19cb24395bdd9919f4b073
+      internalID: 1159435041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_3
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 750
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420a3d6dab28d734f9c02c044ae30271
+      internalID: -1617090991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_4
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 750
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b63a789d65f7b48b55f11db7f82d45
+      internalID: -1838938308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_5
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 750
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4a8e21c7bede646a1780ef1ff44628
+      internalID: -1917516570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_6
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 750
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8050af84377eb4142815bc4301fcee22
+      internalID: -830067415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 625
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc253844b2375f49ad83de3e6e4b5e3
+      internalID: 1976571885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_8
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 625
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334aefc5643528f4bbeb71b679f45599
+      internalID: 1654390393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_9
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 625
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c80e36b83324c4bb74860f5f69b0a4
+      internalID: -1988487339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_10
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 625
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d2c5b7c16364447922dd9414f3f3b5
+      internalID: 314563047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_11
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 625
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a1b5bd1382ee940879ebcc4abeed2a
+      internalID: 1521429861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_12
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 625
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98591e47b9b7f14aae8650f8d3acd48
+      internalID: 595877054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_13
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 625
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af4c60cc7d60274fa99de0cfa0fb711
+      internalID: -1095421778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_14
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 625
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd33c036301e5145b1391b402806d1f
+      internalID: 956780783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff33178658fd2e47ad9541d37ae8155
+      internalID: -507623077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_16
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 500
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3be9a2f4989cb419fa9a3f227ab413
+      internalID: -596994971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_17
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 500
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f04b4c2c9fa94d4fbe4b3aee79f8188
+      internalID: -1390082343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_18
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 500
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6db36bdbe04504ea7bf42c60f771a3
+      internalID: -2132187956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_19
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 500
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3299c0b63bb95504da81e6e28b3bdd97
+      internalID: 302096909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_20
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 500
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7e60f642f78734ab1579c7064c6f32
+      internalID: 2103568874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_21
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 500
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7071e4173e3386242a031bb452b920df
+      internalID: -1951835625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_22
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 500
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e27d9d4c7a98ca41a259f446983ee86
+      internalID: 1709680793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 375
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369f4c44356519745ae76f9d1ee0ba70
+      internalID: 1350443660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_24
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 375
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decf697601d64de48a392aca1420edfb
+      internalID: -876321336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_25
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 375
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb6c5dc7af65924fb636cfc043957dc
+      internalID: 2053510437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_26
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 375
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cd6f71c1abe8344b337130beaf7144
+      internalID: 1910903762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_27
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 375
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af12496d14495d545a8082137329ddd2
+      internalID: 521254653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_28
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 375
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909bf9f229a96a1459efc0878917aa13
+      internalID: -1815249458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_29
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 375
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53b2140963096049bcd9d9c1d6b8b92
+      internalID: -916522301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_30
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 375
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215e2ea33324ecb4eb5fd0e9af520cbd
+      internalID: -1310300283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c74449f9a6d3640b5dba7ba993d920
+      internalID: -730760909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_32
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 250
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5449e5d08420cf3478b1f628fe1bfeda
+      internalID: 543207653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_33
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 250
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3171c0125206e59429b3a1623fa1189b
+      internalID: -123259989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_34
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 250
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a313f29cf06015f4bb1abacf09633c9e
+      internalID: 365098474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_35
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 250
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c7fff7eab46cf4fac0da214513372a
+      internalID: 1171333218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_36
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 250
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071fdbd7a51ce1a4d9a14ff9916b5c66
+      internalID: 562519530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_37
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 250
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263ae4681d032e34a95e541f68626286
+      internalID: 1688128951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_38
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 250
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05d1d0472d7e764d9e49c8ca2417f69
+      internalID: -594748833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 125
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82dd4470d18eef488ad4eaebe5337af
+      internalID: -1282570718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_40
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 125
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8f254bc2b29684fa693ff55231bafb
+      internalID: 129478693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_41
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 125
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd65ef4f82f14864e95f71c00464a447
+      internalID: -1957732441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_42
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 125
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5612755644fd494ebaf4a7060062d24
+      internalID: 306388020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_43
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 125
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4834f6487d81a024b974bea5fbf94b32
+      internalID: 763523539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_44
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 125
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853181325e6000d43a5c05a237a2f48e
+      internalID: 1472405857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_45
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 125
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5ceba16f135614cbaa528cac110bc7
+      internalID: -1525735773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_46
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 125
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470c8b23d8466a64490de954c1a3d7d3
+      internalID: 979167185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461ea44ae114baf47a80880f429ba8c8
+      internalID: -470209467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_48
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 0
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcae535da51db97468ef44840fadaf06
+      internalID: -1380698153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_49
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 0
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8402375efab73e44b85da2233b677aae
+      internalID: 917081507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_50
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c384200ddb29924fa30326a02b145a5
+      internalID: 1096591751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_51
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 0
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc02c9dfdb5f8a744bea07621a0b80ed
+      internalID: -1126303599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_52
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 0
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ec8a5acb42b704bb7bd507e006aff1
+      internalID: -294141066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_53
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 0
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41341affab82d04e93be9e1f471a3a1
+      internalID: 487536809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass and Paths_ 109 x 125px_ comp_54
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 0
+        width: 109
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4150dc26908c034b9aec975639a54f6
+      internalID: 1639049353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: be4bbf6e490bac5438b63b99b9df98c8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BaseGrass: 8687363116155369659
+      Grass and Paths_ 109 x 125px_ comp_1: 171541983
+      Grass and Paths_ 109 x 125px_ comp_10: 314563047
+      Grass and Paths_ 109 x 125px_ comp_11: 1521429861
+      Grass and Paths_ 109 x 125px_ comp_12: 595877054
+      Grass and Paths_ 109 x 125px_ comp_13: -1095421778
+      Grass and Paths_ 109 x 125px_ comp_14: 956780783
+      Grass and Paths_ 109 x 125px_ comp_15: -507623077
+      Grass and Paths_ 109 x 125px_ comp_16: -596994971
+      Grass and Paths_ 109 x 125px_ comp_17: -1390082343
+      Grass and Paths_ 109 x 125px_ comp_18: -2132187956
+      Grass and Paths_ 109 x 125px_ comp_19: 302096909
+      Grass and Paths_ 109 x 125px_ comp_2: 1159435041
+      Grass and Paths_ 109 x 125px_ comp_20: 2103568874
+      Grass and Paths_ 109 x 125px_ comp_21: -1951835625
+      Grass and Paths_ 109 x 125px_ comp_22: 1709680793
+      Grass and Paths_ 109 x 125px_ comp_23: 1350443660
+      Grass and Paths_ 109 x 125px_ comp_24: -876321336
+      Grass and Paths_ 109 x 125px_ comp_25: 2053510437
+      Grass and Paths_ 109 x 125px_ comp_26: 1910903762
+      Grass and Paths_ 109 x 125px_ comp_27: 521254653
+      Grass and Paths_ 109 x 125px_ comp_28: -1815249458
+      Grass and Paths_ 109 x 125px_ comp_29: -916522301
+      Grass and Paths_ 109 x 125px_ comp_3: -1617090991
+      Grass and Paths_ 109 x 125px_ comp_30: -1310300283
+      Grass and Paths_ 109 x 125px_ comp_31: -730760909
+      Grass and Paths_ 109 x 125px_ comp_32: 543207653
+      Grass and Paths_ 109 x 125px_ comp_33: -123259989
+      Grass and Paths_ 109 x 125px_ comp_34: 365098474
+      Grass and Paths_ 109 x 125px_ comp_35: 1171333218
+      Grass and Paths_ 109 x 125px_ comp_36: 562519530
+      Grass and Paths_ 109 x 125px_ comp_37: 1688128951
+      Grass and Paths_ 109 x 125px_ comp_38: -594748833
+      Grass and Paths_ 109 x 125px_ comp_39: -1282570718
+      Grass and Paths_ 109 x 125px_ comp_4: -1838938308
+      Grass and Paths_ 109 x 125px_ comp_40: 129478693
+      Grass and Paths_ 109 x 125px_ comp_41: -1957732441
+      Grass and Paths_ 109 x 125px_ comp_42: 306388020
+      Grass and Paths_ 109 x 125px_ comp_43: 763523539
+      Grass and Paths_ 109 x 125px_ comp_44: 1472405857
+      Grass and Paths_ 109 x 125px_ comp_45: -1525735773
+      Grass and Paths_ 109 x 125px_ comp_46: 979167185
+      Grass and Paths_ 109 x 125px_ comp_47: -470209467
+      Grass and Paths_ 109 x 125px_ comp_48: -1380698153
+      Grass and Paths_ 109 x 125px_ comp_49: 917081507
+      Grass and Paths_ 109 x 125px_ comp_5: -1917516570
+      Grass and Paths_ 109 x 125px_ comp_50: 1096591751
+      Grass and Paths_ 109 x 125px_ comp_51: -1126303599
+      Grass and Paths_ 109 x 125px_ comp_52: -294141066
+      Grass and Paths_ 109 x 125px_ comp_53: 487536809
+      Grass and Paths_ 109 x 125px_ comp_54: 1639049353
+      Grass and Paths_ 109 x 125px_ comp_6: -830067415
+      Grass and Paths_ 109 x 125px_ comp_7: 1976571885
+      Grass and Paths_ 109 x 125px_ comp_8: 1654390393
+      Grass and Paths_ 109 x 125px_ comp_9: -1988487339
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

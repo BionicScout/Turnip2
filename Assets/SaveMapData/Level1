@@ -1,0 +1,141 @@
+{
+    "gridWidth": 3,
+    "gridHeight": 3,
+    "tiles": [
+        {
+            "q": 0,
+            "r": 0,
+            "s": 0,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+        },
+        {
+            "q": 0,
+            "r": 1,
+            "s": -1,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+        },
+        {
+            "q": -1,
+            "r": 2,
+            "s": -1,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+        },
+        {
+            "q": 1,
+            "r": 0,
+            "s": -1,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+        },
+        {
+            "q": 1,
+            "r": 1,
+            "s": -2,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "Assets/HexGrid/Test Images/BottomDecTest.png",
+                "Assets/HexGrid/Test Images/ObjectTest.png",
+                "Assets/HexGrid/Test Images/TopDecTest.png",
+                "Assets/HexGrid/Test Images/Indicator_ Move Range_ Blue.png"
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+        },
+        {
+            "q": 0,
+            "r": 2,
+            "s": -2,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+        },
+        {
+            "q": 2,
+            "r": 0,
+            "s": -2,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+        },
+        {
+            "q": 2,
+            "r": 1,
+            "s": -3,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+        },
+        {
+            "q": 1,
+            "r": 2,
+            "s": -3,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+        }
+    ]
+}
