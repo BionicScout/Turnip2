@@ -1,2 +1,12 @@
 fileFormatVersion: 2
 guid: 4749e844963346e418ebf4801a4f0c1e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - defaultHexSprite: {fileID: 7031383357659144761, guid: cc96d3b01a6e06d4d84a5505cb4fa8e6, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -122,7 +122,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_1
+      name: BasePath
       rect:
         serializedVersion: 2
         x: 218
@@ -144,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_2
+      name: BaseLightGrass
       rect:
         serializedVersion: 2
         x: 327
@@ -166,7 +166,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_3
+      name: G_LG_M_TL
       rect:
         serializedVersion: 2
         x: 436
@@ -188,10 +188,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_4
+      name: G_LG_M_TR
       rect:
         serializedVersion: 2
-        x: 545
+        x: 546
         y: 750
         width: 109
         height: 125
@@ -210,7 +210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_5
+      name: G_LG_M_BL
       rect:
         serializedVersion: 2
         x: 654
@@ -232,7 +232,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_6
+      name: G_LG_M_BR
       rect:
         serializedVersion: 2
         x: 763
@@ -254,7 +254,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_7
+      name: G_P_B_TL
       rect:
         serializedVersion: 2
         x: 0
@@ -276,7 +276,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_8
+      name: G_P_B_TR
       rect:
         serializedVersion: 2
         x: 109
@@ -298,7 +298,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_9
+      name: P_G_B_TL
       rect:
         serializedVersion: 2
         x: 218
@@ -320,7 +320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_10
+      name: P_G_B_TR
       rect:
         serializedVersion: 2
         x: 327
@@ -342,7 +342,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_11
+      name: G_LG_B_TL
       rect:
         serializedVersion: 2
         x: 436
@@ -364,7 +364,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_12
+      name: G_LG_B_TR
       rect:
         serializedVersion: 2
         x: 545
@@ -386,7 +386,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_13
+      name: LG_G_B_TL
       rect:
         serializedVersion: 2
         x: 654
@@ -408,7 +408,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_14
+      name: LG_G_B_TR
       rect:
         serializedVersion: 2
         x: 763
@@ -430,7 +430,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_15
+      name: G_P_B_L
       rect:
         serializedVersion: 2
         x: 0
@@ -452,7 +452,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_16
+      name: G_P_B_R
       rect:
         serializedVersion: 2
         x: 109
@@ -474,7 +474,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_17
+      name: P_G_B_L
       rect:
         serializedVersion: 2
         x: 218
@@ -496,7 +496,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_18
+      name: P_G_B_R
       rect:
         serializedVersion: 2
         x: 327
@@ -518,7 +518,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_19
+      name: G_LG_B_L
       rect:
         serializedVersion: 2
         x: 436
@@ -540,7 +540,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_20
+      name: G_LG_B_R
       rect:
         serializedVersion: 2
         x: 545
@@ -562,7 +562,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_21
+      name: LG_G_B_L
       rect:
         serializedVersion: 2
         x: 654
@@ -584,7 +584,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_22
+      name: LG_G_B_R
       rect:
         serializedVersion: 2
         x: 763
@@ -606,7 +606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_23
+      name: G_P_B_BL
       rect:
         serializedVersion: 2
         x: 0
@@ -628,7 +628,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_24
+      name: G_P_B_BR
       rect:
         serializedVersion: 2
         x: 109
@@ -650,7 +650,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_25
+      name: P_G_B_BL
       rect:
         serializedVersion: 2
         x: 218
@@ -672,7 +672,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_26
+      name: P_G_B_BR
       rect:
         serializedVersion: 2
         x: 327
@@ -694,7 +694,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_27
+      name: G_LG_B_BL
       rect:
         serializedVersion: 2
         x: 436
@@ -716,11 +716,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_28
+      name: G_LG_B_BR
       rect:
         serializedVersion: 2
         x: 545
-        y: 375
+        y: 376
         width: 109
         height: 125
       alignment: 0
@@ -738,7 +738,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_29
+      name: LG_G_B_BL
       rect:
         serializedVersion: 2
         x: 654
@@ -760,7 +760,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_30
+      name: LG_G_B_BR
       rect:
         serializedVersion: 2
         x: 763
@@ -782,11 +782,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_31
+      name: G_P_S1_TL
       rect:
         serializedVersion: 2
         x: 0
-        y: 250
+        y: 251
         width: 109
         height: 125
       alignment: 0
@@ -804,7 +804,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_32
+      name: G_P_S1_TR
       rect:
         serializedVersion: 2
         x: 109
@@ -826,10 +826,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_33
+      name: P_G_S1_TL
       rect:
         serializedVersion: 2
-        x: 218
+        x: 219
         y: 250
         width: 109
         height: 125
@@ -848,7 +848,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_34
+      name: P_G_S1_TR
       rect:
         serializedVersion: 2
         x: 327
@@ -870,7 +870,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_35
+      name: G_LG_S1_TL
       rect:
         serializedVersion: 2
         x: 436
@@ -892,7 +892,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_36
+      name: G_LG_S1_TR
       rect:
         serializedVersion: 2
         x: 545
@@ -914,7 +914,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_37
+      name: LG_G_S1_TL
       rect:
         serializedVersion: 2
         x: 654
@@ -936,7 +936,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_38
+      name: LG_G_S1_TR
       rect:
         serializedVersion: 2
         x: 763
@@ -958,7 +958,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_39
+      name: G_P_S2_BL
       rect:
         serializedVersion: 2
         x: 0
@@ -980,7 +980,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_40
+      name: G_P_S2_BR
       rect:
         serializedVersion: 2
         x: 109
@@ -1002,7 +1002,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_41
+      name: P_G_S2_BL
       rect:
         serializedVersion: 2
         x: 218
@@ -1024,7 +1024,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_42
+      name: P_G_S2_BR
       rect:
         serializedVersion: 2
         x: 327
@@ -1046,7 +1046,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_43
+      name: G_LG_S2_BL
       rect:
         serializedVersion: 2
         x: 436
@@ -1068,7 +1068,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_44
+      name: G_LG_S2_BR
       rect:
         serializedVersion: 2
         x: 545
@@ -1090,7 +1090,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_45
+      name: LG_G_S2_BL
       rect:
         serializedVersion: 2
         x: 654
@@ -1112,7 +1112,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_46
+      name: LG_G_S2_BR
       rect:
         serializedVersion: 2
         x: 763
@@ -1134,7 +1134,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_47
+      name: G_P_S1_B
       rect:
         serializedVersion: 2
         x: 0
@@ -1156,7 +1156,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_48
+      name: G_P_S2_T
       rect:
         serializedVersion: 2
         x: 109
@@ -1178,7 +1178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_49
+      name: P_G_S1_B
       rect:
         serializedVersion: 2
         x: 218
@@ -1200,7 +1200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_50
+      name: P_G_S2_T
       rect:
         serializedVersion: 2
         x: 327
@@ -1222,7 +1222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_51
+      name: G_LG_S1_B
       rect:
         serializedVersion: 2
         x: 436
@@ -1244,7 +1244,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_52
+      name: G_LG_S2_T
       rect:
         serializedVersion: 2
         x: 545
@@ -1266,7 +1266,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_53
+      name: LG_G_S1_B
       rect:
         serializedVersion: 2
         x: 654
@@ -1288,7 +1288,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass and Paths_ 109 x 125px_ comp_54
+      name: LG_G_S2_T
       rect:
         serializedVersion: 2
         x: 763
@@ -1324,60 +1324,60 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       BaseGrass: 8687363116155369659
-      Grass and Paths_ 109 x 125px_ comp_1: 171541983
-      Grass and Paths_ 109 x 125px_ comp_10: 314563047
-      Grass and Paths_ 109 x 125px_ comp_11: 1521429861
-      Grass and Paths_ 109 x 125px_ comp_12: 595877054
-      Grass and Paths_ 109 x 125px_ comp_13: -1095421778
-      Grass and Paths_ 109 x 125px_ comp_14: 956780783
-      Grass and Paths_ 109 x 125px_ comp_15: -507623077
-      Grass and Paths_ 109 x 125px_ comp_16: -596994971
-      Grass and Paths_ 109 x 125px_ comp_17: -1390082343
-      Grass and Paths_ 109 x 125px_ comp_18: -2132187956
-      Grass and Paths_ 109 x 125px_ comp_19: 302096909
-      Grass and Paths_ 109 x 125px_ comp_2: 1159435041
-      Grass and Paths_ 109 x 125px_ comp_20: 2103568874
-      Grass and Paths_ 109 x 125px_ comp_21: -1951835625
-      Grass and Paths_ 109 x 125px_ comp_22: 1709680793
-      Grass and Paths_ 109 x 125px_ comp_23: 1350443660
-      Grass and Paths_ 109 x 125px_ comp_24: -876321336
-      Grass and Paths_ 109 x 125px_ comp_25: 2053510437
-      Grass and Paths_ 109 x 125px_ comp_26: 1910903762
-      Grass and Paths_ 109 x 125px_ comp_27: 521254653
-      Grass and Paths_ 109 x 125px_ comp_28: -1815249458
-      Grass and Paths_ 109 x 125px_ comp_29: -916522301
-      Grass and Paths_ 109 x 125px_ comp_3: -1617090991
-      Grass and Paths_ 109 x 125px_ comp_30: -1310300283
-      Grass and Paths_ 109 x 125px_ comp_31: -730760909
-      Grass and Paths_ 109 x 125px_ comp_32: 543207653
-      Grass and Paths_ 109 x 125px_ comp_33: -123259989
-      Grass and Paths_ 109 x 125px_ comp_34: 365098474
-      Grass and Paths_ 109 x 125px_ comp_35: 1171333218
-      Grass and Paths_ 109 x 125px_ comp_36: 562519530
-      Grass and Paths_ 109 x 125px_ comp_37: 1688128951
-      Grass and Paths_ 109 x 125px_ comp_38: -594748833
-      Grass and Paths_ 109 x 125px_ comp_39: -1282570718
-      Grass and Paths_ 109 x 125px_ comp_4: -1838938308
-      Grass and Paths_ 109 x 125px_ comp_40: 129478693
-      Grass and Paths_ 109 x 125px_ comp_41: -1957732441
-      Grass and Paths_ 109 x 125px_ comp_42: 306388020
-      Grass and Paths_ 109 x 125px_ comp_43: 763523539
-      Grass and Paths_ 109 x 125px_ comp_44: 1472405857
-      Grass and Paths_ 109 x 125px_ comp_45: -1525735773
-      Grass and Paths_ 109 x 125px_ comp_46: 979167185
-      Grass and Paths_ 109 x 125px_ comp_47: -470209467
-      Grass and Paths_ 109 x 125px_ comp_48: -1380698153
-      Grass and Paths_ 109 x 125px_ comp_49: 917081507
-      Grass and Paths_ 109 x 125px_ comp_5: -1917516570
-      Grass and Paths_ 109 x 125px_ comp_50: 1096591751
-      Grass and Paths_ 109 x 125px_ comp_51: -1126303599
-      Grass and Paths_ 109 x 125px_ comp_52: -294141066
-      Grass and Paths_ 109 x 125px_ comp_53: 487536809
-      Grass and Paths_ 109 x 125px_ comp_54: 1639049353
-      Grass and Paths_ 109 x 125px_ comp_6: -830067415
-      Grass and Paths_ 109 x 125px_ comp_7: 1976571885
-      Grass and Paths_ 109 x 125px_ comp_8: 1654390393
-      Grass and Paths_ 109 x 125px_ comp_9: -1988487339
+      BaseLightGrass: 1159435041
+      BasePath: 171541983
+      G_LG_B_BL: 521254653
+      G_LG_B_BR: -1815249458
+      G_LG_B_L: 302096909
+      G_LG_B_R: 2103568874
+      G_LG_B_TL: 1521429861
+      G_LG_B_TR: 595877054
+      G_LG_M_BL: -1917516570
+      G_LG_M_BR: -830067415
+      G_LG_M_TL: -1617090991
+      G_LG_M_TR: -1838938308
+      G_LG_S1_B: -1126303599
+      G_LG_S1_TL: 1171333218
+      G_LG_S1_TR: 562519530
+      G_LG_S2_BL: 763523539
+      G_LG_S2_BR: 1472405857
+      G_LG_S2_T: -294141066
+      G_P_B_BL: 1350443660
+      G_P_B_BR: -876321336
+      G_P_B_L: -507623077
+      G_P_B_R: -596994971
+      G_P_B_TL: 1976571885
+      G_P_B_TR: 1654390393
+      G_P_S1_B: -470209467
+      G_P_S1_TL: -730760909
+      G_P_S1_TR: 543207653
+      G_P_S2_BL: -1282570718
+      G_P_S2_BR: 129478693
+      G_P_S2_T: -1380698153
+      LG_G_B_BL: -916522301
+      LG_G_B_BR: -1310300283
+      LG_G_B_L: -1951835625
+      LG_G_B_R: 1709680793
+      LG_G_B_TL: -1095421778
+      LG_G_B_TR: 956780783
+      LG_G_S1_B: 487536809
+      LG_G_S1_TL: 1688128951
+      LG_G_S1_TR: -594748833
+      LG_G_S2_BL: -1525735773
+      LG_G_S2_BR: 979167185
+      LG_G_S2_T: 1639049353
+      P_G_B_BL: 2053510437
+      P_G_B_BR: 1910903762
+      P_G_B_L: -1390082343
+      P_G_B_R: -2132187956
+      P_G_B_TL: -1988487339
+      P_G_B_TR: 314563047
+      P_G_S1_B: 917081507
+      P_G_S1_TL: -123259989
+      P_G_S1_TR: 365098474
+      P_G_S2_BL: -1957732441
+      P_G_S2_BR: 306388020
+      P_G_S2_T: 1096591751
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
