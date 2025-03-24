@@ -9,7 +9,7 @@ public class TabGroup : MonoBehaviour {
 
     public List<GameObject> objectsToSwap;
 
-    MyTabButton selectedTab;
+    protected MyTabButton selectedTab;
 
     public void Subscribe(MyTabButton button) {
         if(tabButtons == null) {

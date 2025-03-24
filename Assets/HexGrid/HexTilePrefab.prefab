@@ -50,4 +50,4 @@ MonoBehaviour:
   isPassable: 1
   isInteractable: 0
   spriteLayers: []
-  defaultHexSprite: {fileID: 8687363116155369659, guid: 353213e2e5cd64d4b981913704c13963, type: 3}
+  defaultHexSprite: {fileID: 7031383357659144761, guid: cc96d3b01a6e06d4d84a5505cb4fa8e6, type: 3}

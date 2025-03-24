@@ -1,8 +1,6 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using static UnityEditor.U2D.ScriptablePacker;
-
 
 [System.Serializable]
 public class LevelBuilderData  {

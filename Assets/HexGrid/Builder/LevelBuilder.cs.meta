@@ -1,2 +1,15 @@
 fileFormatVersion: 2
 guid: b8823d6db91c2524fa0160060a93de59
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hexGridObject: {instanceID: 0}
+  - hexTilePrefab: {fileID: 1468559927205974053, guid: 2eab8f76603eaea44831ae53d3c987a0, type: 3}
+  - defaultHex: {fileID: 7031383357659144761, guid: cc96d3b01a6e06d4d84a5505cb4fa8e6, type: 3}
+  - spriteAtlas: {instanceID: 0}
+  executionOrder: 100
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

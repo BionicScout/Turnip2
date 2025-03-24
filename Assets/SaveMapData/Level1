@@ -1,6 +1,6 @@
 {
-    "gridWidth": 3,
-    "gridHeight": 3,
+    "gridWidth": 12,
+    "gridHeight": 5,
     "tiles": [
         {
             "q": 0,
@@ -9,13 +9,28 @@
             "isPassable": true,
             "isInteractable": false,
             "sprites": [
-                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
                 "",
                 "",
                 "",
                 ""
             ],
-            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 1,
+            "r": 0,
+            "s": -1,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
         },
         {
             "q": 0,
@@ -24,13 +39,28 @@
             "isPassable": true,
             "isInteractable": false,
             "sprites": [
-                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
                 "",
                 "",
                 "",
                 ""
             ],
-            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 1,
+            "r": 1,
+            "s": -2,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
         },
         {
             "q": -1,
@@ -39,43 +69,13 @@
             "isPassable": true,
             "isInteractable": false,
             "sprites": [
-                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
                 "",
                 "",
                 "",
                 ""
             ],
-            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
-        },
-        {
-            "q": 1,
-            "r": 0,
-            "s": -1,
-            "isPassable": true,
-            "isInteractable": false,
-            "sprites": [
-                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
-        },
-        {
-            "q": 1,
-            "r": 1,
-            "s": -2,
-            "isPassable": true,
-            "isInteractable": false,
-            "sprites": [
-                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
-                "Assets/HexGrid/Test Images/BottomDecTest.png",
-                "Assets/HexGrid/Test Images/ObjectTest.png",
-                "Assets/HexGrid/Test Images/TopDecTest.png",
-                "Assets/HexGrid/Test Images/Indicator_ Move Range_ Blue.png"
-            ],
-            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
         },
         {
             "q": 0,
@@ -84,13 +84,43 @@
             "isPassable": true,
             "isInteractable": false,
             "sprites": [
-                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
                 "",
                 "",
                 "",
                 ""
             ],
-            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": -1,
+            "r": 3,
+            "s": -2,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 0,
+            "r": 3,
+            "s": -3,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
         },
         {
             "q": 2,
@@ -99,13 +129,13 @@
             "isPassable": true,
             "isInteractable": false,
             "sprites": [
-                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
                 "",
                 "",
                 "",
                 ""
             ],
-            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
         },
         {
             "q": 2,
@@ -114,13 +144,13 @@
             "isPassable": true,
             "isInteractable": false,
             "sprites": [
-                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
                 "",
                 "",
                 "",
                 ""
             ],
-            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
         },
         {
             "q": 1,
@@ -129,13 +159,748 @@
             "isPassable": true,
             "isInteractable": false,
             "sprites": [
-                "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png",
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
                 "",
                 "",
                 "",
                 ""
             ],
-            "defaultHexSprite": "Assets/HexGrid/Test Images/Grass and Paths_ 109 x 125px_ comp.png"
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 1,
+            "r": 3,
+            "s": -4,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 3,
+            "r": 0,
+            "s": -3,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 3,
+            "r": 1,
+            "s": -4,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 2,
+            "r": 2,
+            "s": -4,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 2,
+            "r": 3,
+            "s": -5,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 4,
+            "r": 0,
+            "s": -4,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 4,
+            "r": 1,
+            "s": -5,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/G_P/Hex_P_G_L_TR.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 3,
+            "r": 2,
+            "s": -5,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 3,
+            "r": 3,
+            "s": -6,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 5,
+            "r": 0,
+            "s": -5,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/G_P/Hex_G_P_S1_B.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 5,
+            "r": 1,
+            "s": -6,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/G_P/Hex_P_G_S2_T.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 4,
+            "r": 2,
+            "s": -6,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/G_P/Hex_P_G_S2_BL.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 4,
+            "r": 3,
+            "s": -7,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 6,
+            "r": 0,
+            "s": -6,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/G_P/Hex_G_P_S1_B.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 6,
+            "r": 1,
+            "s": -7,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/G_P/Hex_P_G_L_TL.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 5,
+            "r": 2,
+            "s": -7,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/G_P/Hex_P_G_L_BR.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 5,
+            "r": 3,
+            "s": -8,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/G_P/Hex_G_P_L_TL.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 7,
+            "r": 0,
+            "s": -7,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 7,
+            "r": 1,
+            "s": -8,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/G_P/Hex_G_P_S2_BR.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 6,
+            "r": 2,
+            "s": -8,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/G_P/Hex_P_G_S1_TL.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 6,
+            "r": 3,
+            "s": -9,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/G_P/Hex_G_P_L_TR.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": -2,
+            "r": 4,
+            "s": -2,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": -1,
+            "r": 4,
+            "s": -3,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 0,
+            "r": 4,
+            "s": -4,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 1,
+            "r": 4,
+            "s": -5,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 2,
+            "r": 4,
+            "s": -6,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 3,
+            "r": 4,
+            "s": -7,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 4,
+            "r": 4,
+            "s": -8,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 5,
+            "r": 4,
+            "s": -9,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 8,
+            "r": 0,
+            "s": -8,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 8,
+            "r": 1,
+            "s": -9,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 7,
+            "r": 2,
+            "s": -9,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/G_P/Hex_G_P_S2_BR.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 7,
+            "r": 3,
+            "s": -10,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 6,
+            "r": 4,
+            "s": -10,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 9,
+            "r": 0,
+            "s": -9,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 9,
+            "r": 1,
+            "s": -10,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 8,
+            "r": 2,
+            "s": -10,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 8,
+            "r": 3,
+            "s": -11,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 7,
+            "r": 4,
+            "s": -11,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 10,
+            "r": 0,
+            "s": -10,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 10,
+            "r": 1,
+            "s": -11,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 9,
+            "r": 2,
+            "s": -11,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 9,
+            "r": 3,
+            "s": -12,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 8,
+            "r": 4,
+            "s": -12,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 11,
+            "r": 0,
+            "s": -11,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 11,
+            "r": 1,
+            "s": -12,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 10,
+            "r": 2,
+            "s": -12,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 10,
+            "r": 3,
+            "s": -13,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
+        },
+        {
+            "q": 9,
+            "r": 4,
+            "s": -13,
+            "isPassable": true,
+            "isInteractable": false,
+            "sprites": [
+                "Assets/Art/BackgroundHex/Base/Hex_Grass.png",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "defaultHexSprite": "Assets/HexGrid/Test Images/DefaultHex.png"
         }
     ]
 }

@@ -1,10 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BuilderItem : MonoBehaviour {
-    public Image image;
+public class BuilderItem : MyTabButton {
+    public Image objectImage;
 
     public void UpdateSprite(Sprite sprite) {
-        image.sprite = sprite;
+        objectImage.sprite = sprite;
+    }
+
+    public Sprite GetSprite() {
+        return objectImage.sprite;
     }
 }
