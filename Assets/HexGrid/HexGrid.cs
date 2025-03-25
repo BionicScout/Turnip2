@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.U2D;
+using System.Linq;
 
 public class HexGrid : MonoBehaviour {
     public GameObject hexTilePrefab = null;
@@ -189,7 +190,7 @@ public class HexGrid : MonoBehaviour {
         if(row % 2 != 0) {
             x += hexWidth * 0.5f; // Offset by half the vertical distance between rows
         }
-        Debug.Log(new Vector3(x , y , 0));
+        //Debug.Log(new Vector3(x , y , 0));
 
         return new Vector3(x , y , 0);
     }
@@ -282,6 +283,10 @@ public class HexGrid : MonoBehaviour {
         }
 
         return neighbors;
+    }
+
+    public List<HexTile> GetAllTiles() {
+        return new List<HexTile>(hexTiles.Values.ToArray());
     }
 
     /******************************************************************

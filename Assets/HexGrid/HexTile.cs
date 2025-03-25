@@ -7,12 +7,17 @@ public class HexTile : MonoBehaviour {
     public SpriteRenderer[] spriteLayers; //Layers from bottom to top: tile base, background decoration, object, forground decoration, highlight
     public Sprite defaultHexSprite;
 
-    /*********************************
-        Set Methods
-    *********************************/
+    public static readonly Vector3Int[] directions = {
+        new Vector3Int(-1, 1, 0), new Vector3Int(0, 1, -1), new Vector3Int(1, 0, -1), 
+        new Vector3Int(1, -1, 0), new Vector3Int(0, -1, 1), new Vector3Int(-1, 0, 1)
+    };
 
-    // Cube Coord Constructor
-    public void SetHexTile(int x , int y , int z) {
+/*********************************
+    Set Methods
+*********************************/
+
+// Cube Coord Constructor
+public void SetHexTile(int x , int y , int z) {
         if(x + y + z != 0) {
             Debug.LogError("Cube coordinates do not sum to 0");
         }
@@ -63,15 +68,11 @@ public class HexTile : MonoBehaviour {
     }
 
     public void SetSpriteLayer(int layer , Sprite sprite) {
-        Debug.Assert(sprite != null, "HexTile[SetSpriteLayer]: sprite is null");
+        Debug.Assert(sprite != null || layer != 0, "HexTile[SetSpriteLayer]: sprite is null for background hex");
         Debug.Assert(layer >= 0 && layer < 5, "HexTile[SetSpriteLayer]: layer is invalid value \"" + layer + "\"");
 
-        if(layer < spriteLayers.Length) {
-            spriteLayers[layer].sprite = sprite;
-        }
-        else {
-            Debug.LogWarning("Layer index out of range");
-        }
+        spriteLayers[layer].sprite = sprite;
+
     }
 
     public void SetAllSpriteLayers(Sprite[] sprites) {
@@ -95,7 +96,7 @@ public class HexTile : MonoBehaviour {
         Utiliy
     *********************************/
 
-    public Vector3Int getCoords() {
+    public Vector3Int GetCoords() {
         return new Vector3Int(q , r , s);
     }
 }
