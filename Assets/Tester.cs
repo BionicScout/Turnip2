@@ -12,10 +12,16 @@ public class Tester : MonoBehaviour {
     List<HexTile> tiles = new List<HexTile>();
     HexTile directTarget1 = null;
     HexTile directTarget2 = null;
+    public Sprite UnitSprite;
 
 
     private void Start() {
-        hexGridObject = FindAnyObjectByType<HexGrid>().gameObject;     
+        hexGridObject = FindAnyObjectByType<HexGrid>().gameObject;
+
+        PlayerUnit testPU = new PlayerUnit();
+        testPU.unitSprite = UnitSprite;
+        testPU.state = CombatUnit.State.move;
+        GameEvents.current.PlayerSelect(testPU);
     }
 
 
@@ -112,5 +118,6 @@ public class Tester : MonoBehaviour {
             }
 
         }
+
     }
 }

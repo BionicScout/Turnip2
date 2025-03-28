@@ -6,7 +6,7 @@ MonoImporter:
   defaultReferences:
   - DefualtSprite: {fileID: 7031383357659144761, guid: cc96d3b01a6e06d4d84a5505cb4fa8e6, type: 3}
   - HexPrefab: {fileID: 1468559927205974053, guid: 2eab8f76603eaea44831ae53d3c987a0, type: 3}
-  executionOrder: -20
+  executionOrder: -4
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 
