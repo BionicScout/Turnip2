@@ -293,32 +293,4 @@ public class HexGrid : MonoBehaviour {
         Painting Tiles
     ******************************************************************/
 
-    void Update() {
-        //if(Input.GetMouseButtonDown(0)) {
-        //    Vector3 mousePoint = Input.mousePosition;
-        //    mousePoint.z = -Camera.main.transform.position.z;
-        //    Vector3 worldPoint = Camera.main.ScreenToWorldPoint(mousePoint);
-        //    Vector2 gridPoint = new Vector2(worldPoint.x , worldPoint.y);
-        //    Vector3Int hexCoords = WorldToCubic(gridPoint);
-        //    if(hexTiles.ContainsKey(hexCoords)) {
-        //        RemoveHexTile(hexCoords);
-        //    }
-
-        //}
-
-        if(Input.GetKeyDown(KeyCode.Equals)) {
-            AddRow();
-        }
-        if(Input.GetKeyDown(KeyCode.Minus)) {
-            RemoveRow();
-        }
-        if(Input.GetKeyDown(KeyCode.RightBracket)) {
-            AddColumn();
-        }
-        if(Input.GetKeyDown(KeyCode.LeftBracket)) {
-            RemoveColumn();
-        }
-    }
-
-
 }

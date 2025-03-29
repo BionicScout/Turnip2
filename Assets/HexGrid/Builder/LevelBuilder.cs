@@ -23,6 +23,8 @@ public class LevelBuilder : MonoBehaviour {
         }
         hexGrid = hexGridObject.AddComponent<HexGrid>();
         hexGrid.Instance(hexTilePrefab, defaultHex);
+
+        GameEvents.current.SetCameraBounds(hexGrid);
     }
 
     public void LoadMap(string mapName) {
@@ -40,6 +42,8 @@ public class LevelBuilder : MonoBehaviour {
             }
             hexGrid = hexGridObject.AddComponent<HexGrid>();
             hexGrid.Instance(hexTilePrefab , defaultHex, data);
+
+            GameEvents.current.SetCameraBounds(hexGrid);
         }
     }
 
@@ -53,7 +57,25 @@ public class LevelBuilder : MonoBehaviour {
     }
 
 
+    void Update() {
 
+        if(Input.GetKeyDown(KeyCode.Equals)) {
+            hexGrid.AddRow();
+            GameEvents.current.SetCameraBounds(hexGrid);
+        }
+        if(Input.GetKeyDown(KeyCode.Minus)) {
+            hexGrid.RemoveRow();
+            GameEvents.current.SetCameraBounds(hexGrid);
+        }
+        if(Input.GetKeyDown(KeyCode.RightBracket)) {
+            hexGrid.AddColumn();
+            GameEvents.current.SetCameraBounds(hexGrid);
+        }
+        if(Input.GetKeyDown(KeyCode.LeftBracket)) {
+            hexGrid.RemoveColumn();
+            GameEvents.current.SetCameraBounds(hexGrid);
+        }
+    }
 
 
 
