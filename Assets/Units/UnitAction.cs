@@ -11,8 +11,8 @@ public class UnitAction {
     bool needsSelectionTarget;
 
     Action LoadAction;
-    Func<CombatUnit, bool> CheckPreconditions = (CombatUnit u) => true;
-    Action<CombatUnit, HexTile> PerformAction;
+    Func<UnitModel, bool> CheckPreconditions = (UnitModel u) => true;
+    Action<UnitModel, HexController> PerformAction;
 
 
     public class Builder {
@@ -53,12 +53,12 @@ public class UnitAction {
             return this;
         }
 
-        public Builder WithAction(Action<CombatUnit, HexTile> performAction) {
+        public Builder WithAction(Action<UnitModel, HexController> performAction) {
             action.PerformAction = performAction;
             return this;
         }
 
-        public Builder WithPrecondition(Func<CombatUnit, bool> func) {
+        public Builder WithPrecondition(Func<UnitModel, bool> func) {
             action.CheckPreconditions = func;
             return this;
         }

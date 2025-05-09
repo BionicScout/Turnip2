@@ -1,5 +1,8 @@
 using UnityEngine;
 
 public class HexObject {
-    public HexTile currentTile;
+    string name = "Un-named";
+    public HexController currentTile;
+
+    public Vector3Int HexCoord => currentTile.Coord;
 }

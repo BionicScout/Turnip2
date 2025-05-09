@@ -13,10 +13,10 @@ public class GameEvents : MonoBehaviour {
         HUD
     **********************************/ 
 
-    public event Action<PlayerUnit> OnPlayerSelect;
-    public void PlayerSelect(PlayerUnit playerUnit) {
+    public event Action<UnitModel, Action<int>> OnPlayerSelect;
+    public void PlayerSelect(UnitModel playerUnit, Action<int> listener) {
         if (OnPlayerSelect != null) {
-            OnPlayerSelect(playerUnit);
+            OnPlayerSelect(playerUnit, listener);
         }
     }
 
@@ -30,4 +30,9 @@ public class GameEvents : MonoBehaviour {
             OnSetCameraBounds(grid);
         }
     }
+
+    /**********************************
+        Map Inputs
+    **********************************/
+
 }

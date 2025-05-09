@@ -1,22 +1,24 @@
 using UnityEngine;
+using static HexUtil.HexMath;
 using System.Collections.Generic;
-using UnityEngine.U2D;
 using System.Linq;
 
 public class HexGrid : MonoBehaviour {
     public GameObject hexTilePrefab = null;
     public Sprite exampleSpriteSize = null;
 
+    [SerializeField] Sprite DefualtBackSprite;
+
     public int gridWidth = 1; // Number of columns
     public int gridHeight = 1; // Number of rows
 
     private float hexWidth, hexHeight;
+    public Vector2 hexDimensions => new Vector2(hexWidth, hexHeight);
 
 
-    public Dictionary<Vector3Int , HexTile> hexTiles = new Dictionary<Vector3Int , HexTile>();
+    public Dictionary<Vector3Int , HexController> hexTiles = new Dictionary<Vector3Int , HexController>();
 
     bool instantiated = false;
-
 
 
     /******************************************************************
@@ -46,19 +48,16 @@ public class HexGrid : MonoBehaviour {
 
         foreach(var dataTile in data.tiles) {
             Vector3Int cubicCoords = dataTile.GetCupicCoord();
-            Vector3 pos = CubicToWorld(cubicCoords);
+            Vector3 pos = CubicToWorld(cubicCoords, hexDimensions);
 
-            HexTile hexTile = CreateHexTile(pos , cubicCoords);
-            hexTile.isPassable = dataTile.isPassable;
-            hexTile.isInteractable = dataTile.isInteractable;
-
-            Sprite[] loadSprites = dataTile.GetSprites();
-            for(int i = 0; i < hexTile.spriteLayers.Length; i++) {
-                SpriteRenderer renderer = hexTile.spriteLayers[i];
-                renderer.sprite = loadSprites[i];
-            }
-
-            hexTile.defaultHexSprite = dataTile.GetDefaultSprite();
+            HexController hexTile = new HexTileBuilder(cubicCoords, DefualtBackSprite)
+                .WithWorldLocation(pos)
+                .WithPassability(dataTile.isPassable)
+                .WithInteractability(dataTile.isInteractable)
+                .WithSprites(dataTile.GetSprites())
+                .WithObject(null)
+                .WithUnit(null)
+                .Build();
 
             hexTiles.Add(cubicCoords , hexTile);
         }
@@ -67,19 +66,27 @@ public class HexGrid : MonoBehaviour {
     }
 
     void Start() {
-        if(instantiated) { return; }
+        if(instantiated) { EventBus<UpdateHexGridEvent>.Raise(new UpdateHexGridEvent { grid = this }); return; }
 
         hexWidth = exampleSpriteSize.bounds.size.x;
         hexHeight = exampleSpriteSize.bounds.size.y;
 
         GenerateGrid();
+        EventBus<UpdateHexGridEvent>.Raise(new UpdateHexGridEvent { grid = this });
     }
 
     // Generate the hex grid
     private void GenerateGrid() {
         for(int col = 0; col < gridWidth; col++) {
             for(int row = 0; row < gridHeight; row++) {
-                CreateHexTile(new Vector2Int(row , col));
+                Vector3Int cubicCoords = OffsetToCubic(new Vector2Int(row, col));
+                Vector3 pos = CubicToWorld(cubicCoords, hexDimensions);
+
+                HexController hexTile = new HexTileBuilder(cubicCoords, DefualtBackSprite)
+                    .WithWorldLocation(pos)
+                    .Build();
+
+                hexTiles.Add(cubicCoords, hexTile);
             }
         }
     }
@@ -94,28 +101,11 @@ public class HexGrid : MonoBehaviour {
     /******************************************************************
         Creating and Removing Tiles
     ******************************************************************/
-    private void CreateHexTile(Vector2Int offsetCoord) {
-        Vector3Int cubicCoords = OffsetToCubic(offsetCoord);
-        Vector3 pos = OffsetToWorld(offsetCoord);
-
-        HexTile hexTile = CreateHexTile(pos , cubicCoords);
-        hexTiles.Add(cubicCoords , hexTile);
+    public void RemoveHexController(Vector2Int offsetCoord) {
+        RemoveHexController(OffsetToCubic(offsetCoord));
     }
 
-    private HexTile CreateHexTile(Vector3 position , Vector3Int cubicCoord) {
-        GameObject hexTileObject = Instantiate(hexTilePrefab , position , Quaternion.identity , this.transform);
-        HexTile hexTile = hexTileObject.GetComponent<HexTile>();
-
-        hexTile.SetHexTile(cubicCoord);
-
-        return hexTile;
-    }
-
-    public void RemoveHexTile(Vector2Int offsetCoord) {
-        RemoveHexTile(OffsetToCubic(offsetCoord));
-    }
-
-    public void RemoveHexTile(Vector3Int cubicCoord) {
+    public void RemoveHexController(Vector3Int cubicCoord) {
         GameObject hexObj = hexTiles[cubicCoord].gameObject;
         hexTiles.Remove(cubicCoord);
         Destroy(hexObj);
@@ -128,9 +118,18 @@ public class HexGrid : MonoBehaviour {
     public void AddColumn() {
         int col = gridWidth;
         for(int row = 0; row < gridHeight; row++) {
-            CreateHexTile(new Vector2Int(row , col));
+            Vector3Int cubicCoords = OffsetToCubic(new Vector2Int(row, col));
+            Vector3 pos = CubicToWorld(cubicCoords, hexDimensions);
+
+            HexController hexTile = new HexTileBuilder(cubicCoords, DefualtBackSprite)
+                .WithWorldLocation(pos)
+                .Build();
+
+            hexTiles.Add(cubicCoords, hexTile);
         }
         gridWidth++;
+
+        EventBus<UpdateHexGridEvent>.Raise(new UpdateHexGridEvent { grid = this });
     }
 
     // Remove the last column from the grid
@@ -140,18 +139,29 @@ public class HexGrid : MonoBehaviour {
 
         int col = gridWidth - 1;
         for(int row = 0; row < gridHeight; row++) {
-            RemoveHexTile(new Vector2Int(row , col));
+            RemoveHexController(new Vector2Int(row , col));
         }
         gridWidth--;
+
+        EventBus<UpdateHexGridEvent>.Raise(new UpdateHexGridEvent { grid = this });
     }
 
     // Add a row to the grid
     public void AddRow() {
         int row = gridHeight;
         for(int col = 0; col < gridWidth; col++) {
-            CreateHexTile(new Vector2Int(row , col));
+            Vector3Int cubicCoords = OffsetToCubic(new Vector2Int(row, col));
+            Vector3 pos = CubicToWorld(cubicCoords, hexDimensions);
+
+            HexController hexTile = new HexTileBuilder(cubicCoords, DefualtBackSprite)
+                .WithWorldLocation(pos)
+                .Build();
+
+            hexTiles.Add(cubicCoords, hexTile);
         }
         gridHeight++;
+
+        EventBus<UpdateHexGridEvent>.Raise(new UpdateHexGridEvent { grid = this });
     }
 
     // Remove the last row from the grid
@@ -161,120 +171,28 @@ public class HexGrid : MonoBehaviour {
 
         int row = gridHeight - 1;
         for(int col = 0; col < gridWidth; col++) {
-            RemoveHexTile(new Vector2Int(row , col));
+            RemoveHexController(new Vector2Int(row , col));
         }
         gridHeight--;
+
+        EventBus<UpdateHexGridEvent>.Raise(new UpdateHexGridEvent { grid = this });
     }
-
-    /******************************************************************
-        Coord Conversions
-    ******************************************************************/
-
-    public Vector3 CubicToWorld(Vector3Int cubicCoord) {
-        int row = cubicCoord.y;
-        int col = cubicCoord.x + (row / 2);
-
-        return OffsetToWorld(new Vector2Int(row , col));
-    }
-
-    // Convert hex coordinates to world coordinates
-    public Vector3 OffsetToWorld(Vector2Int offsetCoord) {
-        int row = offsetCoord.x;
-        int col = offsetCoord.y;
-
-        // Calculate x position
-        float x = col * hexWidth;
-
-        // Calculate y position and apply stagger for odd columns
-        float y = row * hexHeight * 0.75f;
-        if(row % 2 != 0) {
-            x += hexWidth * 0.5f; // Offset by half the vertical distance between rows
-        }
-        //Debug.Log(new Vector3(x , y , 0));
-
-        return new Vector3(x , y , 0);
-    }
-
-    public Vector3Int OffsetToCubic(Vector2Int offsetCoord) {
-        int row = offsetCoord.x;
-        int col = offsetCoord.y;
-
-        int q = col - (row / 2);
-        int r = row;
-        int s = -q - r;
-
-        return new Vector3Int(q , r , s);
-    }
-
-    public Vector3Int WorldToCubic(Vector2 worldPoint) {
-        //Get Approximate Hexagon using Rounding
-        float row = worldPoint.y / (hexHeight * 0.75f);
-        float col = worldPoint.x / hexWidth;
-        if(Mathf.RoundToInt(row) % 2 != 0) {
-            //col = (worldPoint.x + (hexWidth * 0.5f)) / hexWidth;
-        }
-
-        float q = col - (row / 2);
-        float r = row;
-        float s = -q - r;
-
-        Vector3Int targetCoord = RoundCoord(new Vector3(q , r , s)); //Cubic Coord
-
-        //Check target and all neighboors to see who is closer
-        List<Vector3Int> hex_directions = new List<Vector3Int> {
-            new Vector3Int(-1, 1, 0), new Vector3Int(0, 1, -1), new Vector3Int(1, 0, -1),
-            new Vector3Int(1, -1, 0), new Vector3Int(0, -1, 1), new Vector3Int(-1, 0, 1),
-        };
-
-        Vector3Int closestCoord = targetCoord;
-        float closestDistance = Vector3.Distance(CubicToWorld(targetCoord) , worldPoint);
-
-        foreach(Vector3Int possibleCoord in hex_directions) {
-            Vector2 pos = CubicToWorld(possibleCoord);
-            float dist = Vector3.Distance(pos , worldPoint);
-
-            if(dist < closestDistance) {
-                closestCoord = possibleCoord;
-                closestDistance = dist;
-            }
-        }
-
-        return closestCoord; // Cubic Coord
-    }
-
 
     /******************************************************************
         Utility
     ******************************************************************/
 
-    public Vector3Int RoundCoord(Vector3 worldCoord) {
-        int q = Mathf.RoundToInt(worldCoord.x);
-        int r = Mathf.RoundToInt(worldCoord.y);
-        int s = Mathf.RoundToInt(worldCoord.z);
 
-        float q_diff = Mathf.Abs(q - worldCoord.x);
-        float r_diff = Mathf.Abs(r - worldCoord.y);
-        float s_diff = Mathf.Abs(s - worldCoord.z);
-
-        if(q_diff > r_diff && q_diff > s_diff)
-            q = -r - s;
-        else if(r_diff > s_diff)
-            r = -q - s;
-        else
-            s = -q - r;
-
-        return new Vector3Int(q , r , s);
-    }
 
     // Get neighbors of a hex tile
-    public List<HexTile> GetNeighbors(HexTile tile) {
-        List<HexTile> neighbors = new List<HexTile>();
+    public List<HexController> GetNeighbors(HexController tile) {
+        List<HexController> neighbors = new List<HexController>();
         List<Vector3Int> hex_directions = new List<Vector3Int> {
             new Vector3Int(-1, 1, 0), new Vector3Int(0, 1, -1), new Vector3Int(1, 0, -1),
             new Vector3Int(1, -1, 0), new Vector3Int(0, -1, 1), new Vector3Int(-1, 0, 1)
         };
 
-        Vector3Int currentCoords = new Vector3Int(tile.q , tile.r , tile.s);
+        Vector3Int currentCoords = tile.Coord;
         foreach(var direction in hex_directions) {
             Vector3Int neighborCoords = currentCoords + direction;
             if(hexTiles.ContainsKey(neighborCoords)) {
@@ -285,12 +203,17 @@ public class HexGrid : MonoBehaviour {
         return neighbors;
     }
 
-    public List<HexTile> GetAllTiles() {
-        return new List<HexTile>(hexTiles.Values.ToArray());
+    public List<HexController> GetAllTiles() {
+        return new List<HexController>(hexTiles.Values.ToArray());
     }
 
-    /******************************************************************
-        Painting Tiles
-    ******************************************************************/
+    public HexController GetTile(Vector3Int targetCoord) {
+        foreach(HexController tile in hexTiles.Values) {
+            if(tile.Coord == targetCoord) {
+                return tile;
+            }
+        }
 
+        return null;
+    }
 }

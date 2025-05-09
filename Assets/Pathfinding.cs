@@ -1,3 +1,4 @@
+using HexUtil;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,22 +23,22 @@ public class Pathfinding {
         public Vector3Int previous;
 
         // Constructor
-        public SearchHex(HexTile tile, bool ignoreUnits) {
+        public SearchHex(HexController tile, bool ignoreUnits) {
             Debug.Assert(tile != null, "Pathfinding.SearchHex[SearchHex]: tile is null");
 
-            coord = tile.GetCoords();
+            coord = tile.Coord;
             visited = false;
-            isObstacle = !tile.isPassable /*|| (ignoreUnits && (GlobalVars.players.ContainsKey(hexCoord) || GlobalVars.enemies.ContainsKey(hexCoord)))*/;
+            isObstacle = !tile.Passable /*|| (ignoreUnits && (GlobalVars.players.ContainsKey(hexCoord) || GlobalVars.enemies.ContainsKey(hexCoord)))*/;
             dist = UNVISITED_DISTANCE;
             previous = Vector3Int.one; //Impossible to Get with Hexagon Coords
         }
 
-        public SearchHex(HexTile tile, bool ignoreUnits, Vector3Int startLoc) {
+        public SearchHex(HexController tile, bool ignoreUnits, Vector3Int startLoc) {
             Debug.Assert(tile != null, "Pathfinding.SearchHex[SearchHex]: tile is null");
 
-            coord = tile.GetCoords();
+            coord = tile.Coord;
             visited = false;
-            isObstacle = !tile.isPassable /* || (ignoreUnits && startLoc != hexCoord && (GlobalVars.players.ContainsKey(hexCoord) || GlobalVars.enemies.ContainsKey(hexCoord)))*/;
+            isObstacle = !tile.Passable /* || (ignoreUnits && startLoc != hexCoord && (GlobalVars.players.ContainsKey(hexCoord) || GlobalVars.enemies.ContainsKey(hexCoord)))*/;
             dist = UNVISITED_DISTANCE;
             previous = Vector3Int.one; //Impossible to Get with Hexagon Coords
         }
@@ -82,23 +83,23 @@ public class Pathfinding {
     /*********************************
        Pathfinding
     *********************************/
-    public static List<Tuple<HexTile, int>> AllTilesInRangeWithDistance(List<HexTile> allTiles, HexTile startTile, int range, bool ignoreUnits) {
+    public static List<Tuple<HexController, int>> AllTilesInRangeWithDistance(List<HexController> allTiles, HexController startTile, int range, bool ignoreUnits) {
         Debug.Assert(startTile != null, "Pathfinding[AllTilesInRangeWithDistance]: startTile is null");
         Debug.Assert(range > 0, "Pathfinding[AllTilesInRangeWithDistance]: range less than 1");
         Debug.Assert(allTiles != null, "Pathfinding[AllTilesInRangeWithDistance]: allTiles is null");
 
         // Define variables for loop
-        HexTile currentTile;
-        HexTile nextTile;
+        HexController currentTile;
+        HexController nextTile;
         SearchHex nextSearchHex;
 
-        Dictionary<Vector3Int, HexTile> tileLookUp = allTiles.ToDictionary(tile => tile.GetCoords());
+        Dictionary<Vector3Int, HexController> tileLookUp = allTiles.ToDictionary(tile => tile.Coord);
 
         // Create dictionary with start hex
-        Dictionary<HexTile, SearchHex> searchList = new Dictionary<HexTile, SearchHex> { { startTile, new SearchHex(startTile, ignoreUnits) } };
+        Dictionary<HexController, SearchHex> searchList = new Dictionary<HexController, SearchHex> { { startTile, new SearchHex(startTile, ignoreUnits) } };
 
         // Define queue with tiles to search. Starts with the starting location. Then Search list.
-        Queue<HexTile> queue = new Queue<HexTile>();
+        Queue<HexController> queue = new Queue<HexController>();
         queue.Enqueue(startTile);
 
         Visit(searchList, startTile);
@@ -110,9 +111,9 @@ public class Pathfinding {
 
             currentTile = queue.Dequeue();
 
-            foreach(Vector3Int dir in HexTile.directions) {
+            foreach(Vector3Int dir in HexMath.hex_directions) {
                 // If position is off board, skip.
-                tileLookUp.TryGetValue(currentTile.GetCoords() + dir, out nextTile);
+                tileLookUp.TryGetValue(currentTile.Coord + dir, out nextTile);
                 if(nextTile == null) { continue; }
 
                 // If position is on board, add Search hex if needed
@@ -140,11 +141,11 @@ public class Pathfinding {
         }
 
         // Return List of Possibilities
-        List<Tuple<HexTile, int>> possibleTiles = new List<Tuple<HexTile, int>>();
+        List<Tuple<HexController, int>> possibleTiles = new List<Tuple<HexController, int>>();
 
-        foreach(KeyValuePair<HexTile, SearchHex> data in searchList) {
+        foreach(KeyValuePair<HexController, SearchHex> data in searchList) {
             if(data.Value.dist < range && !data.Value.isObstacle) {
-                possibleTiles.Add(new Tuple<HexTile, int>(data.Key, (int)data.Value.dist)); //Only int for dist in this algorithm
+                possibleTiles.Add(new Tuple<HexController, int>(data.Key, (int)data.Value.dist)); //Only int for dist in this algorithm
             }
         }
 
@@ -152,9 +153,9 @@ public class Pathfinding {
         return possibleTiles;
     }
 
-    public static List<HexTile> AllTilesInRange(List<HexTile> allTiles, HexTile startTile, int range, bool ignoreUnits) {
+    public static List<HexController> AllTilesInRange(List<HexController> allTiles, HexController startTile, int range, bool ignoreUnits) {
         var hexList = AllTilesInRangeWithDistance(allTiles, startTile, range, ignoreUnits);
-        List<HexTile> tiles = new List<HexTile>();
+        List<HexController> tiles = new List<HexController>();
 
         foreach(var data in hexList) {
             tiles.Add(data.Item1);
@@ -163,7 +164,7 @@ public class Pathfinding {
         return tiles;
     }
 
-    public static List<Vector3Int> PathBetweenPoints(List<HexTile> allTiles, HexTile startTile, HexTile endTile, bool ignoreUnits) {
+    public static List<Vector3Int> PathBetweenPoints(List<HexController> allTiles, HexController startTile, HexController endTile, bool ignoreUnits) {
         // A* (star) Pathfinding
 
         Debug.Assert(startTile != null, "Pathfinding[PathBetweenPoints]: startTile is null");
@@ -171,19 +172,19 @@ public class Pathfinding {
         Debug.Assert(allTiles != null, "Pathfinding[PathBetweenPoints]: allTiles is null");
 
         //Loop Variables 
-        HexTile nextTile;
+        HexController nextTile;
         SearchHex nextSearchHex;
-        Dictionary<Vector3Int, HexTile> tileLookUp = allTiles.ToDictionary(tile => tile.GetCoords());
+        Dictionary<Vector3Int, HexController> tileLookUp = allTiles.ToDictionary(tile => tile.Coord);
 
         //Initilzize frontier with Priority Queue
         MinPriorityQueue<Vector3Int> frontier = new MinPriorityQueue<Vector3Int>();
-        frontier.Enqueue(startTile.GetCoords(), 0);
+        frontier.Enqueue(startTile.Coord, 0);
 
         //Define dictionary of tile Activley in search
         Dictionary<Vector3Int, SearchHex> searchList = new Dictionary<Vector3Int, SearchHex>();
-        SearchHex temp = new SearchHex(startTile, ignoreUnits, startTile.GetCoords());
+        SearchHex temp = new SearchHex(startTile, ignoreUnits, startTile.Coord);
         temp.dist = 0;
-        searchList.Add(startTile.GetCoords(), temp);
+        searchList.Add(startTile.Coord, temp);
 
         //
         int iterations = 0;
@@ -191,21 +192,21 @@ public class Pathfinding {
             Vector3Int currentTilePos = frontier.Dequeue();
 
             //If target found exit
-            if(currentTilePos == endTile.GetCoords()) {
+            if(currentTilePos == endTile.Coord) {
                 //Debug.Log(searchList[endPoint].previous);
                 break;
             }
 
             //
-            foreach(Vector3Int dir in HexTile.directions) {
+            foreach(Vector3Int dir in HexMath.hex_directions) {
                 // If position is off board, skip.
                 tileLookUp.TryGetValue(currentTilePos + dir, out nextTile);
                 if(nextTile == null) { continue; }
 
                 // If position is on board, add Search hex if needed
-                if(!searchList.TryGetValue(nextTile.GetCoords(), out nextSearchHex)) {
+                if(!searchList.TryGetValue(nextTile.Coord, out nextSearchHex)) {
                     nextSearchHex = new SearchHex(nextTile, ignoreUnits);
-                    searchList.Add(nextTile.GetCoords(), nextSearchHex);
+                    searchList.Add(nextTile.Coord, nextSearchHex);
                 }
 
                 // Avoid Obstacle
@@ -219,11 +220,11 @@ public class Pathfinding {
 
                 if(nextSearchHex.dist == UNVISITED_DISTANCE || nextSearchHex.dist > newDist) {
                     nextSearchHex.dist = newDist;
-                    float priority = newDist + ManhattanDistance(currentTilePos, endTile.GetCoords());
-                    frontier.Enqueue(nextTile.GetCoords(), priority);
+                    float priority = newDist + ManhattanDistance(currentTilePos, endTile.Coord);
+                    frontier.Enqueue(nextTile.Coord, priority);
                     nextSearchHex.previous = currentTilePos;
 
-                    searchList[nextTile.GetCoords()] = nextSearchHex;
+                    searchList[nextTile.Coord] = nextSearchHex;
                 }
             }
 
@@ -237,7 +238,7 @@ public class Pathfinding {
         }
 
         //Doesn't Reach Target
-        if(!searchList.ContainsKey(endTile.GetCoords())) {
+        if(!searchList.ContainsKey(endTile.Coord)) {
             //Debug.Log("Pathfinding - end point not reached");
             return null;
         }
@@ -246,7 +247,7 @@ public class Pathfinding {
 
         //Trace Path back
         List<Vector3Int> path = new List<Vector3Int>();
-        Vector3Int currentPath = endTile.GetCoords();
+        Vector3Int currentPath = endTile.Coord;
 
         // Maximum iteration limit for path reconstruction
         int pathIterations = 0;
@@ -282,7 +283,7 @@ public class Pathfinding {
         Smaller methods
     *********************************/
 
-    private static void Visit(Dictionary<HexTile, SearchHex> searchList, HexTile key) {
+    private static void Visit(Dictionary<HexController, SearchHex> searchList, HexController key) {
         SearchHex temp = searchList[key];
 
         temp.visited = true;
@@ -290,7 +291,7 @@ public class Pathfinding {
         searchList[key] = temp;
     }
 
-    private static void Visit(Dictionary<HexTile, SearchHex> searchList, HexTile key, int currentRange) {
+    private static void Visit(Dictionary<HexController, SearchHex> searchList, HexController key, int currentRange) {
         SearchHex temp = searchList[key];
 
         temp.visited = true;

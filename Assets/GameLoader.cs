@@ -14,13 +14,13 @@ public class GameLoader : MonoBehaviour {
             .WithOnLoad(() => {
                 
             })
-            .WithPrecondition((CombatUnit actionUnit) => {
+            .WithPrecondition((UnitModel actionUnit) => {
                 return actionUnit.currentMovement != 0;
             })
             .WithSelectionNeeded(true)
-            .WithAction((CombatUnit actionUnit, HexTile tile) => {
+            .WithAction((UnitModel actionUnit, HexController tile) => {
                 HexGrid grid = FindAnyObjectByType<HexGrid>();
-                List<Vector3Int> tileCoordPath = Pathfinding.PathBetweenPoints(grid.GetAllTiles(), actionUnit.currentTile, tile, false);
+                List<Vector3Int> tileCoordPath = Pathfinding.PathBetweenPoints(grid.GetAllTiles(), actionUnit.HexController, tile, false);
                 if(tileCoordPath != null) {
                     Debug.Log("Code to Move Unit");
                 }

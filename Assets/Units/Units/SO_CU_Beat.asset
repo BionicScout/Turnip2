@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eabc55492bf2278468b0b4886fc2f3c1, type: 3}
+  m_Name: SO_CU_Beat
+  m_EditorClassIdentifier: 
+  UnitName: Turnip
+  Sprite: {fileID: 4566065348455649360, guid: f90449ea3e0eae64fa90e3bb5fc319e2, type: 3}
+  actions:
+  - {fileID: 11400000, guid: d4db3aa41e7583143990da21b553dfc6, type: 2}
+  - {fileID: 11400000, guid: 77a27ea4f1ef73741b0dcc0ee33e409f, type: 2}
+  - {fileID: 11400000, guid: 14b36c5b93e3638449f4676a949c9094, type: 2}

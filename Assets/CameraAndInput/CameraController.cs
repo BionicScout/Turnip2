@@ -32,14 +32,19 @@ public class CameraController : MonoBehaviour {
     Vector3 lowerLeftBound;
     Vector3 upperRightBound;
 
-    void Awake() {
-        GameEvents.current.OnSetCameraBounds += SetBounds;
-    }
-
     void Start() {
         newPosition = transform.position;
         newRotation = transform.rotation;
         newZoom = cameraTransform.localPosition.z;
+    }
+
+    void OnEnable() {
+        UpdateGridEventBinding = new EventBinding<UpdateHexGridEvent>(UpdateHexGridEvent);
+        EventBus<UpdateHexGridEvent>.Register(UpdateGridEventBinding);
+
+    }
+    void OnDisable() {
+        EventBus<UpdateHexGridEvent>.Deregister(UpdateGridEventBinding);
     }
 
     void Update() {
@@ -48,12 +53,15 @@ public class CameraController : MonoBehaviour {
         UpdateCamera();
     }
 
+    //********Should probally move this out of this class into an input class*******
     void HandleMouseInput() {
         if(Input.mouseScrollDelta.y != 0) {
             newZoom += Input.mouseScrollDelta.y * zoomAmount;
         }
     }
 
+
+    //********Should probally move this out of this class into an input class*******
     void HandleMovementInput() {
         if(Input.GetKey(KeyCode.LeftShift)) {
             moveSpeed = fastSpeed;
@@ -106,15 +114,29 @@ public class CameraController : MonoBehaviour {
         newPosition = pos;
     }
 
-    public void SetBounds(HexGrid hexGrid) {
-        List<HexTile> tileList = hexGrid.GetAllTiles();
+    /******************************************************************
+        Events and Event Bus
+    ******************************************************************/
+    EventBinding<UpdateHexGridEvent> UpdateGridEventBinding;
 
+    void UpdateHexGridEvent(UpdateHexGridEvent @event) {
+        if(@event.grid == null)
+            return;
+
+        SetBounds(@event.grid);
+    }
+
+    public void SetBounds(HexGrid hexGrid) {
+        List<HexController> tileList = hexGrid.GetAllTiles();
+
+        //Prep find edges of camera bounds
         float upperBound = tileList[0].transform.position.y;
         float lowerBound = tileList[0].transform.position.y;
         float leftBound = tileList[0].transform.position.x;
         float rightBound = tileList[0].transform.position.x;
 
-        foreach (HexTile tile in tileList) { 
+        //Look through each tile and record the min and max on the x and y axis.
+        foreach(HexController tile in tileList) {
             if(tile.transform.position.y > upperBound) {
                 upperBound = tile.transform.position.y;
             }
@@ -130,6 +152,7 @@ public class CameraController : MonoBehaviour {
             }
         }
 
+        //Update the Bounds to the x axis and y axis
         lowerLeftBound = new Vector3(leftBound - margins, lowerBound - margins, 0);
         upperRightBound = new Vector3(rightBound + margins, upperBound + margins, 0);
     }

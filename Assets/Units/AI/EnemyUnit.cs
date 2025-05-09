@@ -1,6 +1,6 @@
 using Unity.VisualScripting;
 
-public class EnemyUnit : CombatUnit {
+public class EnemyUnit {
     FSM fsm;
 
     private void Start() {

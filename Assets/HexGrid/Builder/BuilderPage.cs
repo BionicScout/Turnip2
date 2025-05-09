@@ -11,62 +11,63 @@ public class BuilderPage : TabGroup {
     public List<Sprite> sprites = new List<Sprite>();
 
     private void Start() {
+        tabButtons.Clear();
+
+        for(int i = 0; i < transform.childCount; i++) {
+            Subscribe(transform.GetChild(i).GetComponent<BuilderItem>());
+        }
+
         for(int i = 0; i < Mathf.Min(tabButtons.Count, sprites.Count); i++) {
             ((BuilderItem)tabButtons[i]).UpdateSprite(sprites[i]);
         }
+
     }
 
-    void Update() {
-        if(Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject() && selectedTab != null) {
+    void OnEnable() {
+        TileSelectedEventBinding = new EventBinding<TileSelectedEvent>(SelectTileEvent);
+        EventBus<TileSelectedEvent>.Register(TileSelectedEventBinding);
+    }
 
-            HexGrid hexGrid = hexGridObject.GetComponent<HexGrid>();
-            if(hexGrid == null) {
-                return;
-            }
-            
-            Debug.Log("Click");
+    void OnDisable() {
+        EventBus<TileSelectedEvent>.Deregister(TileSelectedEventBinding);
+    }
 
-            Vector3 mousePoint = Input.mousePosition;
-            mousePoint.z = -Camera.main.transform.position.z;
-            Vector3 worldPoint = Camera.main.ScreenToWorldPoint(mousePoint);
-            Vector2 gridPoint = new Vector2(worldPoint.x , worldPoint.y);
-            Debug.Log(gridPoint);
-            Vector3Int hexCoords = hexGrid.WorldToCubic(gridPoint);
-            if(hexGrid.hexTiles.ContainsKey(hexCoords)) {
-                HexTile hexTile = hexGrid.hexTiles[hexCoords];
-                hexTile.SetSpriteLayer((int)layer, ((BuilderItem)selectedTab).GetSprite());
-            }
+    public void LeftClick(HexController selectedTile) {
+        if(selectedTile == null) { return; }
+        if(EventSystem.current.IsPointerOverGameObject()) { return; }
+        if(selectedTab == null) { return; }
 
+        HexGrid hexGrid = hexGridObject.GetComponent<HexGrid>();
+        if(hexGrid == null) {
+            return;
         }
+
+        selectedTile.SetSpriteLayer((int)layer, ((BuilderItem)selectedTab).GetSprite());
+    }
+
+    public void RightClick(HexController selectedTile) {
+        if(selectedTile == null) { return; }
+        if(EventSystem.current.IsPointerOverGameObject()) { return; }
+        if(selectedTab == null) { return; }
+
+        HexGrid hexGrid = hexGridObject.GetComponent<HexGrid>();
+        if(hexGrid == null) {
+            return;
+        }
+
+        selectedTile.SetSpriteLayer((int)layer, ((BuilderItem)selectedTab).GetSprite());
+    }
+
+    /******************************************************************
+        Events and Event Bus
+    ******************************************************************/
+    EventBinding<TileSelectedEvent> TileSelectedEventBinding;
+
+    void SelectTileEvent(TileSelectedEvent @event) {
+        if(@event.tile == null) { return; }
+
+        LeftClick(@event.tile);
     }
 
 
 }
-
-
-
-
-
-
-
-//public class Input_MapSelection : MonoBehaviour {
-//    public SO_TileInfo data;
-//    public HexGrid hexGrid;
-
-//    public void HandleTileClick(GameObject tileObj) {
-//        HexUIList hexUIList = tileObj.GetComponent<HexUIList>();
-
-//        if(hexUIList != null) {
-//            // Example of accessing data
-//            Debug.Log("Tile data: " + hexUIList.data.name);
-//            data = hexUIList.data;
-//            // Call other methods on hexUIList if needed
-//        }
-//        else {
-//            Debug.LogWarning("HexUIList component not found on tile object.");
-//        }
-//    }
-
-
-//}
-

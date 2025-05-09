@@ -1,0 +1,17 @@
+CameraController
+- Seperate Input into a Dynamic Input System
+
+LevelInput
+- Hard Coded to Hex Grid (Decouple it)
+
+HexGrid
+- Create a Dynamic Hex Grid that will adjust size for only the map editor.
+
+HexTile
+- Revist copy method in Model
+
+
+Last Task: replacing HexTile with HexController 
+
+
+Go through all files to update to Do list
